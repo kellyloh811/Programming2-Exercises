@@ -4,25 +4,30 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Animal1 dog = new Animal1 ();
+		Animal dog = new Animal ();
+		Animal rabbit = new Animal();
 		System.out.println("The first animal is dog.");
-		System.out.println("Breed :" + dog.Breed);
-		System.out.println("Colour :" + dog.Colour);
-		System.out.println("Size :" + dog.Size);
+		System.out.println("Breed	: " + dog.Breed [0]);
+		System.out.println("Colour	: " + dog.Colour[0]);
+		System.out.println("Size	: " + dog.Size[0]);
 		dog.Sit();
 		dog.Run();
 		dog.Jump();
+		dog.Eat();
+		dog.Sleep();
 		
-		System.out.println();
+		System.out.println("\n==========================================\n");
 		
-		Animal2 rabbit = new Animal2 ();
 		System.out.println("The second animal is rabbit.");
-		System.out.println("Breed :" + rabbit.Breed);
-		System.out.println("Colour :" + rabbit.Colour);
-		System.out.println("Size :" + rabbit.Size);
+		System.out.println("Breed	: " + rabbit.Breed [1]);
+		System.out.println("Colour	: " + rabbit.Colour[1]);
+		System.out.println("Size	: " + rabbit.Size[1]);
+		rabbit.Sit();
+		rabbit.Run();
+		rabbit.Jump();
 		rabbit.Eat();
 		rabbit.Sleep();
-		rabbit.Jump();
+		
 	}
 
 }

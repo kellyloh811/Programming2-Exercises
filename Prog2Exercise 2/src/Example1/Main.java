@@ -1,8 +1,5 @@
 package Example1;
 
-import Example2.Animal1;
-import Example2.Animal2;
-
 public class Main {
 
 	public static void main(String[] args) {
