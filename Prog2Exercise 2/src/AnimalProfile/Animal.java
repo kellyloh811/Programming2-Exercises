@@ -2,10 +2,10 @@ package AnimalProfile;
 
 public class Animal {
 
-	void profile(String b, String c, char s) {
-		System.out.println("Breed	: " + b);
-		System.out.println("Colour	: " + c);
-		System.out.println("Size	: " + s);
+	void profile(String breed, String colour, char size) {
+		System.out.println("Breed	: " + breed);
+		System.out.println("Colour	: " + colour);
+		System.out.println("Size	: " + size);
 	}
 	
 	void EatingHabit(String a,String e, String f1, String f2, int w) {
