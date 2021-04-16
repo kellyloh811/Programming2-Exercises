@@ -30,7 +30,7 @@ public class Main {
 				+"\nPrice of monthly rental\t: RM" + lg.monthlyrental + " per month for 5 years");
 		
 		WaterPurifier cuckoo = new WaterPurifier("Cuckoo","VIVID", 3, 'Y', 'Y', 'Y', 'Y', 3200, 85);
-		System.out.println("\n================LG==================");
+		System.out.println("\n================CUCKOO==================");
 		System.out.println("Brand\t\t\t: " + cuckoo.brand
 				+"\nModel\t\t\t: " + cuckoo.model
 				+"\nNumber of function\t: " + cuckoo.function
