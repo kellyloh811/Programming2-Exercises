@@ -1,12 +1,15 @@
-package Exe3;
+package Exe3_1;
+
 import java.util.Scanner;
+
 public class WaterPurifier {
 
-	Scanner in = new Scanner(System.in);
+Scanner in = new Scanner(System.in);
 	
-	String brand, model;
-	int function,retailprice, monthlyrental;
-	char childlock, hotwater, ambientwater, coldwater;
+	private String brand, model;
+	private int function,retailprice, monthlyrental;
+	private char childlock, hotwater, ambientwater, coldwater;
+	
 	
 	//default constructor
 	WaterPurifier(){
@@ -43,4 +46,43 @@ public class WaterPurifier {
 		this.monthlyrental=monthlyrental;
 	}
 	
+	public String getBrand() {
+		return this.brand;
+	}
+	
+	public String getModel() {
+		return this.model;
+	}
+	
+	public int getFunction() {
+		return this.function;
+	}
+	
+	public char getChildLock() {
+		return this.childlock;
+	}
+	
+	public char getHotWater() {
+		return this.hotwater;
+	}
+	
+	public char getAmbientWater() {
+		return this.ambientwater;
+	}
+	
+	public char getColdWater() {
+		return this.coldwater;
+	}
+	
+	public int getRetailPrice() {
+		return this.retailprice;
+	}
+	
+	public int getMonthlyRental() {
+		return this.monthlyrental;
+	}
+	
+	public int calAnnualRental() {
+		return this.monthlyrental*12;
+	}
 }
