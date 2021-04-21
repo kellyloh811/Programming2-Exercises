@@ -1,18 +1,13 @@
 package Exe4;
-import java.util.*;
+
 public class Coway extends WaterPurifier{
 
 	private int retailprice, monthlyrental;
 	
-	Scanner in = new Scanner (System.in);
-	
-	public Coway(String b, String m, int rperiod) {
+	public Coway(String b, String m, int rperiod, int rprice, int mr) {
 		super(b, m, rperiod);
-		System.out.print("Please enter the retail price\t\t: ");
-		retailprice=in.nextInt();
-		System.out.print("Please enter the monthly rental price\t: ");
-		monthlyrental=in.nextInt();
-		System.out.println();
+		retailprice=rprice;
+		monthlyrental=mr;
 	}
 	
 	public int getRetailPrice() {

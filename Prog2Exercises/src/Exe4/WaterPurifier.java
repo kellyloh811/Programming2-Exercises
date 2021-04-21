@@ -1,29 +1,40 @@
 package Exe4;
-
+import java.util.*;
 public class WaterPurifier {
 
 	private String brand, model;
 	private int rentalperiod;
 	
+	Scanner in = new Scanner (System.in);
+	
+	public WaterPurifier() {
+		System.out.print("Please enter the brand\t\t: ");
+		this.brand=in.nextLine();
+		System.out.print("Please enter the model\t\t: ");
+		this.model=in.nextLine();
+		System.out.print("Please enter the rental period\t: ");
+		this.rentalperiod=in.nextInt();
+	}
+	
 	public WaterPurifier(String b, String m, int rperiod){
-		brand=b;
-		model=m;
-		rentalperiod=rperiod;
+		this.brand=b;
+		this.model=m;
+		this.rentalperiod=rperiod;
 	}
 	
 	public String getBrand() {
-		return brand;
+		return this.brand;
 	}
 	
 	public String getModel() {
-		return model;
+		return this.model;
 	}
 	
 	public int getRentalPeriod() {
-		return rentalperiod;
+		return this.rentalperiod;
 	}
 	
 	public String toString() {
-		return "Brand\t\t\t: " + brand + "\nModel\t\t\t: " + model + "\nRental period\t\t: " + rentalperiod + " years";
+		return "\nBrand\t\t\t: " + brand + "\nModel\t\t\t: " + model + "\nRental period\t\t: " + rentalperiod + " years";
 	}
 }
