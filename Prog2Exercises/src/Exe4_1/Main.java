@@ -5,8 +5,8 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Fruits obj1 = new Fruits("Fruits");
-		System.out.println(obj1 + "\n");
+		//Fruits obj1 = new Fruits("Fruits");
+		//System.out.println(obj1 + "\n");
 		
 		Apple obj2 = new Apple("Apple", 3, 10);
 		System.out.println(obj2);
