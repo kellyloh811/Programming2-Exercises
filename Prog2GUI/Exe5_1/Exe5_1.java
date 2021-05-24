@@ -71,15 +71,11 @@ public class Exe5_1 {
 		AddButton.setBackground(new Color(153, 204, 255));
 		AddButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				int ans=0;
-				int[]num=new int [2];
 				try {
-					num[0]=Integer.parseInt(Int1TextField.getText());
-					num[1]=Integer.parseInt(Int2TextField.getText());
+					int a = Integer.parseInt(Int1TextField.getText());
+					int b = Integer.parseInt(Int2TextField.getText());
 					
-					for(int i=0; i<num.length; i++) {
-						ans=ans+num[i];
-					}
+					int ans = a+b;
 					
 					AnsTextField.setText(Integer.toString(ans));
 					
@@ -96,15 +92,11 @@ public class Exe5_1 {
 		MinusButton.setBackground(new Color(153, 204, 255));
 		MinusButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				int ans=0;
-				int[]num=new int [2];
 				try {
-					num[0]=Integer.parseInt(Int1TextField.getText());
-					num[1]=Integer.parseInt(Int2TextField.getText());
+					int a = Integer.parseInt(Int1TextField.getText());
+					int b = Integer.parseInt(Int2TextField.getText());
 					
-					for(int i=0; i<num.length; i++) {
-						ans=num[0]-num[1];
-					}
+					int ans = a-b;
 					
 					AnsTextField.setText(Integer.toString(ans));
 					
